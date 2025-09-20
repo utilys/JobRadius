@@ -1,6 +1,18 @@
-<!doctype html><meta charset="utf-8"><title>Privacy — JobRadius</title>
-<style>body{font:16px/1.6 system-ui;margin:40px auto;max-width:800px;padding:0 16px}</style>
-<h1>Privacy — JobRadius</h1>
-<p>No data reselling. Home address and preferences are stored locally. Geolocation is used only if you enable it, to compute distance.</p>
-<p>We call mapping providers (e.g., Google, OSM) only to geocode addresses. No third-party analytics.</p>
-<p>Contact: <a href="mailto:support@jobradius.app">support@jobradius.app</a></p>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Privacy — JobRadius</title>
+<link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <h1 style="margin:0 0 12px">Privacy — JobRadius</h1>
+    <div class="card">
+      <p><b>No data reselling.</b> Your home address and preferences are stored locally in your browser. Geolocation is used only if you enable it, to compute distance.</p>
+      <p>We call mapping providers (e.g., Google, OSM) only to geocode addresses. No third-party analytics.</p>
+      <p>Contact: <a href="mailto:support@jobradius.app">support@jobradius.app</a></p>
+    </div>
+    <div class="footer"><div></div><div>© <span id="y"></span> utilys</div></div>
+  </div>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body></html>
