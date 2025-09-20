@@ -5,32 +5,65 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>JobRadius — instant distance & directions</title>
 <meta name="description" content="Hover a job’s address to instantly see the distance and open directions in one click."/>
-<style>
-body{font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;background:#0f172a;color:#e5e7eb}
-.wrap{max-width:960px;margin:0 auto;padding:56px 20px}
-h1{font-size:42px;margin:0 0 10px} .lead{color:#94a3b8}
-.btn{display:inline-block;margin:10px 8px 22px 0;padding:12px 18px;border-radius:12px;text-decoration:none;border:1px solid #1f2937}
-.btn.primary{background:#2563eb;color:#fff;border-color:transparent}
-.card{background:#111827;border:1px solid #1f2937;border-radius:14px;padding:16px;margin:8px 0;display:inline-block;min-width:220px}
-footer{margin-top:28px;color:#94a3b8;font-size:14px}
-</style>
+<link rel="stylesheet" href="assets/style.css"/>
+<meta property="og:title" content="JobRadius — instant distance & directions"/>
+<meta property="og:description" content="Instant distance on hover + one-click directions for job listings."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="og-image.png"/>
+<meta property="og:url" content="https://utilys.github.io/JobRadius/"/>
+<link rel="alternate" href="https://utilys.github.io/JobRadius/" hreflang="en"/>
+<link rel="alternate" href="https://utilys.github.io/JobRadius/fr/" hreflang="fr"/>
+<link rel="icon" href="favicon.png"/>
 </head>
 <body>
   <div class="wrap">
-    <h1>JobRadius</h1>
-    <p class="lead">Hover a job’s address to see the <b>distance</b> instantly and open <b>directions</b> in one click.</p>
-    <a class="btn primary" href="CHROME_STORE_URL">Install the extension</a>
-    <a class="btn" href="STRIPE_PAYMENT_LINK?locale=en&utm_source=site">❤️ Support JobRadius</a>
+    <nav>
+      <a class="brand" href="./"><span class="logo"></span><strong>JobRadius</strong></a>
+      <span class="badge">by utilys</span>
+    </nav>
 
-    <div class="card"><b>Instant</b><br/>Distance on hover—no copy-paste.</div>
-    <div class="card"><b>Practical</b><br/>Home or current location, then 1-click directions.</div>
-    <div class="card"><b>Privacy-first</b><br/>No data reselling. Geolocation only if you enable it.</div>
+    <header class="hero">
+      <h1>Instant distance for job listings.</h1>
+      <p class="lead">Hover a job’s address to see the <b>distance</b> instantly and open <b>directions</b> in one click. Stop copy-pasting into Maps.</p>
+      <div class="cta">
+        <!-- Replace CHROME_STORE_URL when you publish on the Chrome Web Store -->
+        <a class="btn primary" href="CHROME_STORE_URL">Install the extension</a>
+        <a class="btn ghost" href="https://donate.stripe.com/fZu14p2FlgSt05R7pa9IQ00?locale=en&utm_source=site">❤️ Support JobRadius</a>
+      </div>
+    </header>
 
-    <footer>
-      <a href="fr/">Français</a> ·
-      <a href="privacy.html">Privacy</a> ·
-      <a href="mailto:support@jobradius.app">support@jobradius.app</a>
-    </footer>
+    <section class="grid">
+      <div class="card kpi"><span class="dot"></span><div><b>Instant</b><br/>Distance on hover—no new tabs.</div></div>
+      <div class="card kpi"><span class="dot"></span><div><b>Practical</b><br/>Home or current location, then one-click directions.</div></div>
+      <div class="card kpi"><span class="dot"></span><div><b>Privacy-first</b><br/>No data reselling. Geolocation only if you enable it.</div></div>
+    </section>
+
+    <section class="section">
+      <h2 style="margin:0 0 8px">How it works</h2>
+      <div class="steps">
+        <div class="step"><b>Install</b> Add JobRadius to Chrome, set your home address once.</div>
+        <div class="step"><b>Hover</b> Move your cursor over any job address (Indeed, LinkedIn, etc.).</div>
+        <div class="step"><b>Decide</b> See the distance instantly and open directions in one click.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="margin:0 0 8px">Roadmap</h2>
+      <p class="lead">Next: travel time by mode (car / walk / transit), list-wide badges, and the JobRadius API for job boards.</p>
+    </section>
+
+    <div class="footer">
+      <div class="links">
+        <a href="fr/">Français</a> ·
+        <a href="privacy.html">Privacy</a> ·
+        <a href="https://github.com/utilys/JobRadius" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="mailto:support@jobradius.app">support@jobradius.app</a>
+      </div>
+      <div>© <span id="y"></span> utilys</div>
+    </div>
   </div>
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
