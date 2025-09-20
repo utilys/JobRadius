@@ -1,15 +1,68 @@
-<!doctype html><html lang="fr"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>JobRadius — distance & itinéraire instantanés</title>
 <meta name="description" content="Survole l’adresse d’une offre d’emploi, vois la distance instantanément et ouvre l’itinéraire en un clic."/>
-</head><body style="font:16px system-ui;margin:40px auto;max-width:900px;padding:0 16px">
-<h1>JobRadius</h1>
-<p>Survole l’adresse d’une offre d’emploi pour voir la <b>distance</b> instantanément et ouvrir <b>l’itinéraire</b> en un clic.</p>
-<p>
-  <a href="../">English</a> ·
-  <a href="../privacy.html">Confidentialité</a> ·
-  <a href="mailto:support@jobradius.app">support@jobradius.app</a>
-</p>
-<p><a href="CHROME_STORE_URL">Installer l’extension</a> ·
-<a href="STRIPE_PAYMENT_LINK?locale=fr&utm_source=site">❤️ Soutenir JobRadius</a></p>
-</body></html>
+<link rel="stylesheet" href="../assets/style.css"/>
+<meta property="og:title" content="JobRadius — distance & itinéraire instantanés"/>
+<meta property="og:description" content="Distance au survol + itinéraire en 1 clic pour les offres d’emploi."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="../og-image.png"/>
+<meta property="og:url" content="https://utilys.github.io/JobRadius/fr/"/>
+<link rel="alternate" href="https://utilys.github.io/JobRadius/" hreflang="en"/>
+<link rel="alternate" href="https://utilys.github.io/JobRadius/fr/" hreflang="fr"/>
+<link rel="icon" href="../favicon.png"/>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="../"><span class="logo"></span><strong>JobRadius</strong></a>
+      <span class="badge">par utilys</span>
+    </nav>
+
+    <header class="hero">
+      <h1>La distance, en un survol.</h1>
+      <p class="lead">Survole l’adresse d’une offre d’emploi pour voir la <b>distance</b> instantanément et ouvrir <b>l’itinéraire</b> en un clic. Fini le copier-coller vers Maps.</p>
+      <div class="cta">
+        <a class="btn primary" href="CHROME_STORE_URL">Installer l’extension</a>
+        <a class="btn ghost" href="https://donate.stripe.com/fZu14p2FlgSt05R7pa9IQ00?locale=fr&utm_source=site">❤️ Soutenir JobRadius</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card kpi"><span class="dot"></span><div><b>Instantané</b><br/>Distance au survol — sans ouvrir d’onglet.</div></div>
+      <div class="card kpi"><span class="dot"></span><div><b>Pratique</b><br/>Domicile ou position actuelle, puis itinéraire en 1 clic.</div></div>
+      <div class="card kpi"><span class="dot"></span><div><b>Respect vie privée</b><br/>Aucune donnée revendue. Géoloc seulement si tu l’actives.</div></div>
+    </section>
+
+    <section class="section">
+      <h2 style="margin:0 0 8px">Comment ça marche</h2>
+      <div class="steps">
+        <div class="step"><b>Installer</b> Ajoute JobRadius à Chrome, définis ton domicile une fois.</div>
+        <div class="step"><b>Survoler</b> Passe la souris sur une adresse (Indeed, LinkedIn, etc.).</div>
+        <div class="step"><b>Décider</b> Vois la distance et ouvre l’itinéraire en un clic.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="margin:0 0 8px">Feuille de route</h2>
+      <p class="lead">À venir : temps estimés (voiture / marche / transport), pastilles sur la liste, et API JobRadius pour les sites d’emploi.</p>
+    </section>
+
+    <div class="footer">
+      <div class="links">
+        <a href="../">English</a> ·
+        <a href="../privacy.html">Confidentialité</a> ·
+        <a href="https://github.com/utilys/JobRadius" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="mailto:support@jobradius.app">support@jobradius.app</a>
+      </div>
+      <div>© <span id="y"></span> utilys</div>
+    </div>
+  </div>
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
